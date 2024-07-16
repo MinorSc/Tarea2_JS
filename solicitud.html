@@ -1,0 +1,25 @@
+<h2>Solicitud de Información</h2>
+<form id="formularioSolicitud">
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+    <br><br>
+    <label for="email">Correo Electrónico:</label>
+    <input type="text" name="email" id="email" placeholder="Ingrese su correo electrónico">
+    <br><br>
+    <label for="asunto">Asunto:</label>
+    <input type="text" name="asunto" id="asunto" placeholder="Ingrese el asunto">
+    <br><br>
+    <label for="mensaje">Mensaje:</label>
+    <textarea name="mensaje" id="mensaje" placeholder="Ingrese su mensaje"></textarea>
+    <br><br>
+    <label for="copia">¿Desea recibir una copia?:</label>
+    <select name="copia" id="copia">
+        <option value="si">Sí</option>
+        <option value="no">No</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Enviar Solicitud" onclick="enviarSolicitud(event)">
+</form>
+<div id="resultado"></div>
+
+<script src="JS/solicitud.js"></script>
